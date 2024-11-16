@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- open all products -->
+<products>
+
+    <!-- all products are stored here containing necessary information -->
+
+    <product code="000-01">
+        <name>Coca-Cola Classic</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-12-31</expirationDate>
+        <unitPrice>1.80</unitPrice>
+        <rating>4.7</rating>
+    </product>
+
+    <product code="000-02">
+        <name>Lay's Original Potato Chips</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-11-15</expirationDate>
+        <unitPrice>1.50</unitPrice>
+        <rating>4.5</rating>
+    </product>
+
+    <product code="000-03">
+        <name>Snickers Bar</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-09-05</expirationDate>
+        <unitPrice>1.20</unitPrice>
+        <rating>4.6</rating>
+    </product>
+
+    <product code="000-04">
+        <name>Doritos Nacho Cheese</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate>2025-11-15</expirationDate>
+        <unitPrice>1.60</unitPrice>
+        <rating>4.8</rating>
+    </product>
+
+    <product code="000-05">
+        <name>Mars Bar</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-08-10</expirationDate>
+        <unitPrice>1.20</unitPrice>
+        <rating>4.5</rating>
+    </product>
+
+    <product code="000-06">
+        <name>Sprite</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate>2025-06-20</expirationDate>
+        <unitPrice>1.80</unitPrice>
+        <rating>4.4</rating>
+    </product>
+
+    <product code="000-07">
+        <name>Pringles Original</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-10-01</expirationDate>
+        <unitPrice>2.20</unitPrice>
+        <rating>4.6</rating>
+    </product>
+
+    <product code="000-08">
+        <name>KitKat</name>
+        <stockStatus>Pre-order</stockStatus>
+        <expirationDate>2025-07-15</expirationDate>
+        <unitPrice>1.20</unitPrice>
+        <rating>4.7</rating>
+    </product>
+
+    <product code="000-09">
+        <name>Fanta Orange</name>
+        <stockStatus>In Stock</stockStatus>
+        <expirationDate>2025-09-20</expirationDate>
+        <unitPrice>1.80</unitPrice>
+        <rating>4.3</rating>
+    </product>
+
+    <product code="000-10">
+        <name>Twix</name>
+        <stockStatus>Out of Stock</stockStatus>
+        <expirationDate>2025-12-01</expirationDate>
+        <unitPrice>1.20</unitPrice>
+        <rating>4.5</rating>
+    </product>
+    
+</products>
+<!-- close all products -->

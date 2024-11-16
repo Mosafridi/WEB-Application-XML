@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- open root element -->
+    <xs:element name="products">
+
+        <!-- open structure type of products -->
+        <xs:complexType>
+
+            <!-- open order of elements -->
+            <xs:sequence>
+
+                <!-- open product element in products -->
+                <xs:element name="product" maxOccurs="unbounded">
+
+                    <!-- open structure type of product -->
+                    <xs:complexType>
+                        <xs:attribute name="code" type="xs:string" use="required" />
+
+                        <!-- open order of child elements within product -->
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string" />
+                            <xs:element name="stockStatus" type="xs:string" />
+                            <xs:element name="expirationDate" type="xs:date" minOccurs="0" />
+                            <xs:element name="unitPrice" type="xs:decimal" />
+                            <xs:element name="rating" type="xs:decimal" />
+                        </xs:sequence>
+                        <!-- close order of child elements within product -->
+
+                    </xs:complexType>
+                    <!-- close structure type of product -->
+
+                </xs:element>
+                <!-- close product element in products -->
+
+            </xs:sequence>
+            <!-- close order of elements -->
+
+        </xs:complexType>
+        <!-- close structure type of products -->
+
+    </xs:element>
+    <!-- close root element -->
+
+</xs:schema>

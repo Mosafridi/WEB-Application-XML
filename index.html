@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Vending Machine Application - Search and purchase drinks easily">
+        <title>Smart Vending Machine</title>
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header>
+            <h1><i class="fas fa-robot"></i> Smart Vending Machine</h1>
+        </header>
+        
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Section -->
+        <section id="search">
+            <h2><i class="fas fa-search"></i> Find Your Drink</h2>
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="productCode" 
+                    placeholder="Enter product code (e.g., 000-01)"
+                    aria-label="Product code input"
+                >
+                <button onclick="searchProduct()">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+            <div id="productInfo">
+                <!-- Search results will be displayed here -->
+                <p>Enter a product code to see details</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Smart Vending Machine | All Rights Reserved</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </footer>
+
+        <!-- Custom JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>

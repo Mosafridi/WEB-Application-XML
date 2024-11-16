@@ -1,0 +1,285 @@
+/* Modern CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #2193b0, #6dd5ed);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Navigation Styles */
+nav {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #2193b0;
+}
+
+/* Search Section */
+#search {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+#search h2 {
+    margin-bottom: 1.5rem;
+    color: #2193b0;
+}
+
+.search-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #2193b0;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #2193b0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a7a8c;
+}
+
+/* Product Info Display */
+#productInfo {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.product-card {
+    background: white;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.product-card h3 {
+    color: #2193b0;
+    margin-bottom: 1rem;
+}
+
+.product-card button {
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: white;
+    margin-top: 3rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #2193b0;
+}
+
+/* Loading Spinner */
+.loading {
+    text-align: center;
+    padding: 1rem;
+}
+
+.loading i {
+    color: #2193b0;
+}
+
+/* Status Colors */
+.status-available {
+    color: #28a745;
+}
+
+.status-unavailable {
+    color: #dc3545;
+}
+
+/* Error Message */
+.error-message {
+    color: #dc3545;
+    padding: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .search-container {
+        flex-direction: column;
+    }
+
+    #search {
+        margin: 2rem 1rem;
+    }
+}
+
+/* About Section */
+.about-section {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section p {
+    margin-bottom: 1em;
+}
+
+.about-section ul {
+    list-style: disc;
+    padding-left: 1.5em;
+    line-height: 1.8;
+}
+
+.about-section ul li {
+    margin-bottom: 0.5em;
+}
+
+
+/* Contact Information */
+.contact-info {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.8;
+}
+
+.contact-info h3 {
+    margin-bottom: 0.5em;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.contact-info li {
+    margin-bottom: 0.5em;
+}
+
+/* Contact Form */
+.contact-form-section {
+    max-width: 800px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm label {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.3em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contactForm textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.button-group {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.button-group button {
+    background-color: #0073e6;
+    color: white;
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-group button:hover {
+    background-color: #005bb5;
+}

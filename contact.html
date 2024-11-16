@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Product Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Information -->
+    <section class="contact-info">
+        <h3>Contact for any queries</h3>
+        <ul>
+            <li>IRE, Dublin, 536 Connolly Street</li>
+            <li>Phone: +353 20 910 1617</li>
+            <li>Alternate: 020 910 1617</li>
+            <li>Email: <a href="mailto:drink@email.com">svendingservice@email.com</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <h3>Fill in Details below:</h3>
+        <form class="contactForm">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="number">Phone Number:</label>
+            <input type="tel" id="number" name="number" required>
+
+            <label for="EirCode">Eircode:</label>
+            <input type="text" id="Code" name="EirCode" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="queryArea">Write your query here:</label>
+            <textarea id="queryArea" name="message" placeholder="Please write your message here" required></textarea>
+
+            <div class="button-group">
+                <button type="button" onclick="sendForm()">Send</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Smart Vending Machine | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
